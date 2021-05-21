@@ -1,0 +1,9 @@
+<view class="section" >
+  <image src="../images/index.jpeg" style="height:190px"></image>
+  <text class="content">\n</text>
+  <text class="content">欢迎{{name}}！</text>
+  <text class="content">\n</text>
+  <text class="content">\n 功能简介</text>
+  <text class="content">\n 查询维修备件库存</text>
+</view>
+

@@ -1,0 +1,33 @@
+
+.section{
+  text-align: center;
+    margin-top: 50px;
+}
+.mybtn3{
+  border: 5rpx  rgba(0, 255, 0, 0.6) solid;
+  width: 40%;
+  color:  rgba(0, 255, 0, 0.6);
+  margin: 20px;
+  border-radius: 7px; 
+}
+.mybtn2{
+  border: 5rpx  rgba(255, 0, 0, 0.6) solid;
+  width: 40%;
+  color:  rgba(255, 0, 0, 0.6);
+  margin: 20px;
+  border-radius: 7px; 
+}
+.mybtn{
+  border: 5rpx  rgba(0, 4, 255, 0.6) solid;
+  width: 40%;
+  color:  rgba(0, 4, 255, 0.6) ;
+  margin: 20px;
+  border-radius: 7px; 
+}
+.content{
+  margin: left;
+  color:  rgba(17, 21, 36, 0.6) ;
+  font-size: 20px;
+  font-weight: bold;
+}
+

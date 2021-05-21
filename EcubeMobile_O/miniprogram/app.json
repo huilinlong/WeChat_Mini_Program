@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/admin/admin",
+    "pages/search/search",
+    "pages/searchredirect/searchredirect"
+    ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "XXXXXMobile",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#ffffff",
+    "color": "#999999",
+    "list": [
+        {
+          "pagePath": "pages/admin/admin",
+          "text": "主页",
+          "iconPath": "pages/images/0006.png",
+          "selectedIconPath": "pages/images/0007.png"
+        },
+      {
+        "pagePath": "pages/search/search",
+        "text": "备件管理",
+        "iconPath": "pages/images/0000.png",
+        "selectedIconPath": "pages/images/0001.png"
+      }
+    ]
+  },
+
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "networkTimeout":{
+    "request":10000
+  }
+}

@@ -1,0 +1,31 @@
+
+<view class="table">
+  <view class="tr bg-w">
+    <view class="th">名称</view>
+    <view class="th2">型号</view>
+    <view class="th">数量</view>
+    <view class="th">库位</view>
+  </view>
+<view wx:if="{{ne.length!=0}}">
+<block wx:for="{{ne}}" wx:key="item">
+<view class="tr bg-g" wx:if="{{index%2==0}}" data-place='{{item.place}}'>
+  <view class="td2">{{item.name}}</view>
+  <view style="color:blue" class="td3">{{item.model}}</view>
+  <view style="color:green" class="td1">{{item.number}}</view>
+  <view style="color:red" class="td2">{{item.place}}</view>
+</view>
+<view class="tr" wx:else data-place='{{item.place}}'>
+  <view class="td2">{{item.name}}</view>
+  <view style="color:blue" class="td3">{{item.model}}</view>
+  <view style="color:green" class="td1">{{item.number}}</view>
+  <view style="color:red" class="td2">{{item.place}}</view>
+</view>
+</block>
+</view>
+
+<view wx:else class="content">
+0条搜索结果
+</view>
+
+
+</view>

@@ -1,0 +1,30 @@
+<view class="section">
+   <view class="searchtype">备件标签</view>
+   <block wx:for="{{parameter}}" wx:key="parameter">
+    <view  class="floatleft" wx:if="{{item.id%2!=0}}">
+      <button style="width:49vw" class='searchbtn text-over {{item.checked?"checked_parameter":""}}' data-id='{{item.id}}' data-type='{{item.type}}' bindtap="parameterTap">{{item.name}}
+    </button> 
+    </view>
+    <view  class="floatright" wx:else>
+      <button style="width:49vw" class='searchbtn text-over {{item.checked?"checked_parameter":""}}' data-id='{{item.id}}' data-type='{{item.type}}' bindtap="parameterTap">{{item.name}}
+    </button> 
+    </view>
+   </block>
+</view>
+
+<view class="section">
+  <checkbox-group bindchange="checkboxChange">
+    <checkbox class="floatleft" value='3'>是否查询X厂仓库数据</checkbox>
+  </checkbox-group>
+  <view class="floatleft2">
+  注：非最新数据，仅供参考X厂是否有该备件。
+  </view>
+</view>
+
+<view class="section">
+<view class="searchtype">备件名称&型号</view>
+<input data-id="siname" class="searchinput" placeholder="模糊搜索名称，如圆形" bindinput="fuzzysearchInput"></input>
+<input data-id="simodel" class="searchinput" placeholder="模糊搜索型号，如p6.66" bindinput="fuzzysearchInput"></input>
+<button bindtap="searchresult" class="searchbtn2"> 搜索
+    </button> 
+</view>
